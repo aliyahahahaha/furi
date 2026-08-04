@@ -2,8 +2,8 @@ const header = document.querySelector('.site-header');
 const toggle = document.querySelector('.menu-toggle');
 toggle.addEventListener('click', () => { const open = header.classList.toggle('open'); toggle.setAttribute('aria-expanded', open); });
 document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => header.classList.remove('open')));
-document.querySelector('#tracking-form').addEventListener('submit', e => { e.preventDefault(); const id = document.querySelector('#tracking-number').value.trim().toUpperCase(); document.querySelector('#tracking-result').textContent = `${id} — Dalam perjalanan ke hub destinasi. Anggaran tiba: esok, 3:30 petang.`; });
-document.querySelector('#quote-form').addEventListener('submit', e => { e.preventDefault(); document.querySelector('#quote-result').textContent = 'Terima kasih! Permintaan demo anda telah diterima.'; e.target.reset(); });
+document.querySelector('#tracking-form').addEventListener('submit', e => { e.preventDefault(); const id = document.querySelector('#tracking-number').value.trim().toUpperCase(); document.querySelector('#tracking-result').textContent = `${id} — In transit to the destination hub. Estimated arrival: tomorrow at 3:30 PM.`; });
+document.querySelector('#quote-form').addEventListener('submit', e => { e.preventDefault(); document.querySelector('#quote-result').textContent = 'Thank you! Your demo request has been received.'; e.target.reset(); });
 
 window.addEventListener('load', () => setTimeout(() => document.querySelector('.page-loader').classList.add('loaded'), 350));
 const progress = document.querySelector('.scroll-progress');
@@ -37,7 +37,7 @@ document.querySelector('#cv-form').addEventListener('submit', e => {
   e.preventDefault();
   const file = e.target.cv.files[0];
   const result = document.querySelector('#cv-result');
-  if (file && file.size > 5 * 1024 * 1024) { result.textContent = 'Fail terlalu besar. Sila pilih fail di bawah 5MB.'; return; }
-  result.textContent = 'Terima kasih! CV anda sedia untuk dihantar selepas sistem backend disambungkan.';
+  if (file && file.size > 5 * 1024 * 1024) { result.textContent = 'The file is too large. Please choose a file under 5MB.'; return; }
+  result.textContent = 'Thank you! Your CV will be ready to send once the form service is connected.';
   e.target.reset();
 });
