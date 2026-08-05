@@ -1,0 +1,117 @@
+.cv-form button:disabled {
+  cursor: wait;
+  opacity: .72;
+}
+
+#cv-result {
+  min-height: 16px;
+  line-height: 1.5;
+}
+
+#cv-result.form-success {
+  color: #18794e;
+  font-weight: 700;
+}
+
+#cv-result.form-error {
+  color: #b42318;
+  font-weight: 700;
+}
+
+.upload-box > span.file-selected {
+  border-color: #18794e;
+  background: #f0faf5;
+}
+
+.upload-box > span.file-selected b {
+  max-width: 70%;
+  overflow: hidden;
+  color: #18794e;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.upload-box > span.file-selected small {
+  color: #18794e;
+  font-weight: 700;
+}
+
+.cv-success-modal {
+  width: min(520px, calc(100vw - 32px));
+  padding: 54px 54px 46px;
+  border: 0;
+  border-radius: 24px;
+  color: #102235;
+  text-align: center;
+  box-shadow: 0 30px 90px #06162555;
+}
+
+.cv-success-modal::backdrop {
+  background: #061625c7;
+  backdrop-filter: blur(8px);
+}
+
+.cv-success-close {
+  position: absolute;
+  top: 17px;
+  right: 19px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #f3f5f6;
+  color: #102235;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.cv-success-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #eaf8f0;
+  color: #18794e;
+  font-size: 34px;
+  font-weight: 800;
+  box-shadow: 0 0 0 12px #f4fbf7;
+}
+
+.cv-success-modal > small {
+  color: #ff5b1a;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.cv-success-modal h2 {
+  margin: 13px 0 16px;
+  font-size: clamp(31px, 4vw, 43px);
+  line-height: 1.06;
+  letter-spacing: -2px;
+}
+
+.cv-success-modal p {
+  margin: 0 auto 28px;
+  max-width: 390px;
+  color: #697582;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.cv-success-done {
+  width: 100%;
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 4px;
+  background: #ff5b1a;
+  color: #fff;
+  font: 800 11px Manrope, sans-serif;
+  cursor: pointer;
+}
+
+@media (max-width: 560px) {
+  .cv-success-modal { padding: 47px 25px 28px; }
+}

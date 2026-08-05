@@ -1,0 +1,81 @@
+.about-art.about-photo {
+  display: block;
+  isolation: isolate;
+  background:
+    linear-gradient(180deg, #071b2f1c 0%, #071b2f14 42%, #071b2fe8 100%),
+    url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1200&q=85') center/cover;
+  box-shadow: 0 24px 60px #071b2f1c;
+}
+
+.about-art.about-photo::before,
+.about-art.about-photo::after {
+  display: none;
+}
+
+.about-photo-top {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 15px;
+  border-left: 3px solid #ff5b1a;
+  background: #071b2fd9;
+  color: #fff;
+  backdrop-filter: blur(8px);
+}
+
+.about-photo-top span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.about-photo-top small {
+  margin-top: 4px;
+  color: #aebdca;
+  font-size: 7px;
+  letter-spacing: 1.2px;
+}
+
+.about-photo-caption {
+  position: absolute;
+  left: 34px;
+  right: 178px;
+  bottom: 38px;
+  z-index: 2;
+  color: #fff;
+}
+
+.about-photo-caption i {
+  display: block;
+  width: 42px;
+  height: 2px;
+  background: #ff5b1a;
+}
+
+.about-photo-caption p {
+  margin: 13px 0 0;
+  max-width: 330px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.about-photo .badge {
+  z-index: 3;
+  width: 130px;
+  height: 130px;
+  right: 24px;
+  bottom: 24px;
+  padding: 25px 20px;
+  box-shadow: 0 18px 35px #06162547;
+}
+
+@media (max-width: 560px) {
+  .about-photo-caption { left: 24px; right: 145px; bottom: 27px; }
+  .about-photo-caption p { font-size: 11px; }
+  .about-photo .badge { width: 112px; height: 112px; right: 18px; bottom: 18px; padding: 21px 16px; }
+  .about-photo .badge strong { font-size: 30px; }
+}

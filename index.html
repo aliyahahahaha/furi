@@ -3,15 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="FURI Global — integrated logistics and automotive supply-chain solutions for Malaysia and the world.">
+  <meta name="description" content="FURI Global — integrated automotive supply-chain, logistics and digital management solutions.">
   <title>FURI Global — Integrated Supply Chain Solutions</title>
+  <link rel="icon" type="image/png" href="assets/brand/furi-favicon.png?v=2">
+  <link rel="apple-touch-icon" href="assets/brand/furi-favicon.png?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="logistics.css">
   <link rel="stylesheet" href="animations.css">
   <link rel="stylesheet" href="brand.css">
-  <link rel="stylesheet" href="sections.css">
+  <link rel="stylesheet" href="sections.css?v=2">
+  <link rel="stylesheet" href="company.css">
+  <link rel="stylesheet" href="modal.css?v=3">
+  <link rel="stylesheet" href="events.css?v=2">
+  <link rel="stylesheet" href="partners.css">
+  <link rel="stylesheet" href="forms.css">
+  <link rel="stylesheet" href="about-visual.css">
+  <style>
+    .events-section .events-intro { max-width: none; }
+    .events-intro > h2,
+    .events-intro > p { max-width: 650px; }
+    .event-slider-tools { width: 100%; }
+  </style>
 </head>
 <body>
   <div class="page-loader" aria-hidden="true"><div class="loader-brand"><img src="assets/brand/furi-global-logo.png" alt=""></div><div class="loader-line"><i></i></div></div>
@@ -19,9 +33,8 @@
   <header class="site-header">
     <a class="brand brand-logo" href="#home" aria-label="FURI Global"><img src="assets/brand/furi-global-logo.png" alt="FURI Global"></a>
     <nav id="main-nav" aria-label="Main navigation">
-      <a href="#home">Home</a><a href="#business">Business</a><a href="#events">Events</a><a href="#awards">Awards</a><a href="#careers">Careers</a><a href="#contact">Contact</a>
+      <a href="#home">Home</a><a href="#company">Company</a><a href="#business">Business</a><a href="#events">Events</a><a href="#awards">Awards</a><a href="#careers">Careers</a>
     </nav>
-    <a class="header-cta" href="#quote">Request a Quote <span>↗</span></a>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
   </header>
 
@@ -29,67 +42,91 @@
     <section class="hero" id="home">
       <div class="hero-grid"></div>
       <div class="hero-content">
-        <div class="eyebrow"><span></span> LOGISTICS WITHOUT LIMITS</div>
-        <h1>Faster <em>Freight.</em><br>Stronger Business.<br>Further <em>Reach.</em></h1>
-        <p>End-to-end logistics solutions connecting your business across Malaysia and around the world.</p>
+        <div class="eyebrow"><span></span> INTEGRATED AUTOMOTIVE SUPPLY CHAIN</div>
+        <h1>Moving <em>Industry.</em><br>Connecting Supply.<br>Creating <em>Value.</em></h1>
+        <p>Integrated logistics, packaging, transportation and digital services built around the automotive industry.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#quote">Start Shipping <span>→</span></a>
+          <a class="btn btn-primary" href="#contact">Contact Us <span>→</span></a>
           <a class="play-link" href="#about"><span class="play">▶</span><b>Discover FURI</b></a>
         </div>
       </div>
       <div class="hero-visual" role="img" aria-label="Container trucks at a logistics hub">
         <div class="route route-one"></div><div class="route route-two"></div>
-        <div class="cargo-card"><span class="signal">●</span><div><small>LATEST STATUS</small><strong>In Transit</strong><p>Port Klang → Johor Bahru</p></div><b>72%</b></div>
       </div>
       <div class="stats">
-        <div><strong class="counter" data-target="12" data-suffix="+">0</strong><span>Years of Experience</span></div>
-        <div><strong class="counter" data-target="2500" data-suffix="+">0</strong><span>Monthly Shipments</span></div>
-        <div><strong class="counter" data-target="98" data-suffix="%">0</strong><span>On-Time Delivery</span></div>
-        <div><strong>24/7</strong><span>Customer Support</span></div>
+        <div><strong class="counter" data-target="9">0</strong><span>Business Bases</span></div>
+        <div><strong class="counter" data-target="6">0</strong><span>Wholly Owned Subsidiaries</span></div>
+        <div><strong class="counter" data-target="400000" data-suffix=" m²">0</strong><span>Warehousing Area</span></div>
+        <div><strong>8</strong><span>Integrated Business Areas</span></div>
       </div>
     </section>
 
-    <section class="trust-strip"><div class="trust-track"><span>Trusted by businesses across Malaysia</span><b>HORIZON</b><b>Vertex</b><b>✓ NORD</b><b>orbital.</b><b>MAJESTIC</b><span>Trusted by businesses across Malaysia</span><b>HORIZON</b><b>Vertex</b><b>✓ NORD</b></div></section>
+    <section class="trust-strip partner-strip" aria-label="Partner logo showcase"><div class="partner-label"><small>OUR NETWORK</small><strong>Partner Showcase</strong></div><div class="trust-track partner-track"><div class="partner-group"><img src="assets/partners/partner-01.png" alt="FURI official partner 1"><img src="assets/partners/partner-02.png" alt="FURI official partner 2"><img src="assets/partners/partner-03.png" alt="FURI official partner 3"><img src="assets/partners/partner-04.png" alt="FURI official partner 4"><img src="assets/partners/partner-05.png" alt="FURI official partner 5"><img src="assets/partners/partner-06.png" alt="FURI official partner 6"><img src="assets/partners/partner-07.png" alt="FURI official partner 7"><img src="assets/partners/partner-08.png" alt="FURI official partner 8"><img src="assets/partners/partner-09.png" alt="FURI official partner 9"><img src="assets/partners/partner-10.png" alt="FURI official partner 10"><img src="assets/partners/partner-11.png" alt="FURI official partner 11"><img src="assets/partners/partner-12.png" alt="FURI official partner 12"><img src="assets/partners/proton-logo.png" alt="Proton"></div><div class="partner-group" aria-hidden="true"><img src="assets/partners/partner-01.png" alt=""><img src="assets/partners/partner-02.png" alt=""><img src="assets/partners/partner-03.png" alt=""><img src="assets/partners/partner-04.png" alt=""><img src="assets/partners/partner-05.png" alt=""><img src="assets/partners/partner-06.png" alt=""><img src="assets/partners/partner-07.png" alt=""><img src="assets/partners/partner-08.png" alt=""><img src="assets/partners/partner-09.png" alt=""><img src="assets/partners/partner-10.png" alt=""><img src="assets/partners/partner-11.png" alt=""><img src="assets/partners/partner-12.png" alt=""><img src="assets/partners/proton-logo.png" alt=""></div></div></section>
 
     <section class="services section" id="services">
-      <div class="section-heading"><div><span class="kicker">WHAT WE DO</span><h2>Logistics that moves<br>with <em>your business.</em></h2></div><p>From local deliveries to global supply chains, our team ensures your cargo arrives safely, quickly and transparently.</p></div>
+      <div class="section-heading"><div><span class="kicker">WHAT WE DO</span><h2>One network for the<br><em>automotive industry.</em></h2></div><p>From inbound materials to production lines and international distribution, FURI connects every stage through coordinated logistics operations.</p></div>
       <div class="service-grid">
-        <article class="service-card featured"><span class="service-no">01</span><div class="service-icon">▰</div><h3>Land Transportation</h3><p>FTL and LTL deliveries across Peninsular Malaysia with real-time shipment visibility.</p><a href="#quote">Explore service <span>→</span></a></article>
-        <article class="service-card"><span class="service-no">02</span><div class="service-icon">✈</div><h3>Air Freight</h3><p>Express solutions for critical, time-sensitive shipments to international destinations.</p><a href="#quote">Explore service <span>→</span></a></article>
-        <article class="service-card"><span class="service-no">03</span><div class="service-icon">▱</div><h3>Ocean Freight</h3><p>Competitive FCL and LCL services supported by comprehensive customs management.</p><a href="#quote">Explore service <span>→</span></a></article>
-        <article class="service-card"><span class="service-no">04</span><div class="service-icon">⌂</div><h3>Warehousing</h3><p>Secure facilities, digital inventory and structured fulfilment built to scale your business.</p><a href="#quote">Explore service <span>→</span></a></article>
+        <article class="service-card featured"><span class="service-no">01</span><div class="service-icon">↗</div><h3>Production Logistics</h3><p>Inbound warehousing, line-side delivery and coordinated material flows supporting automotive manufacturing.</p><a href="#business">Explore services <span>→</span></a></article>
+        <article class="service-card"><span class="service-no">02</span><div class="service-icon">▦</div><h3>Packaging Logistics</h3><p>Packaging production, returnable packaging and circulation management for automotive components.</p><a href="#business">Explore services <span>→</span></a></article>
+        <article class="service-card"><span class="service-no">03</span><div class="service-icon">▰</div><h3>Transportation Logistics</h3><p>Short-distance distribution and long-haul transportation connecting suppliers, plants and regional hubs.</p><a href="#business">Explore services <span>→</span></a></article>
+        <article class="service-card"><span class="service-no">04</span><div class="service-icon">◎</div><h3>International Logistics</h3><p>Integrated warehousing, freight and cross-border coordination supported by a nationwide logistics network.</p><a href="#business">Explore services <span>→</span></a></article>
       </div>
-    </section>
-
-    <section class="tracking" id="coverage">
-      <div><span class="kicker light">REAL-TIME VISIBILITY</span><h2>Your cargo.<br><em>Always on the radar.</em></h2><p>Enter your tracking number to view the latest shipment status and location.</p></div>
-      <form id="tracking-form"><label for="tracking-number">Tracking number</label><div><input id="tracking-number" placeholder="Example: FURI-240815" required><button type="submit">Track Now →</button></div><small id="tracking-result">Shipment tracking is available 24 hours a day, 7 days a week.</small></form>
     </section>
 
     <section class="about section" id="about">
-      <div class="about-art"><div class="map-dot d1"></div><div class="map-dot d2"></div><div class="map-dot d3"></div><span class="big-word">MY</span><div class="badge"><strong>13</strong><small>States<br>Covered</small></div></div>
-      <div class="about-copy"><span class="kicker">WHY FURI</span><h2>More than delivery.<br><em>We move success.</em></h2><p>Every shipment carries a promise to your customer. That is why every route is planned, monitored and managed by an experienced team.</p><ul><li><span>✓</span><div><b>End-to-end visibility</b><small>Transparent shipment updates from pickup to destination.</small></div></li><li><span>✓</span><div><b>A strong network</b><small>Strategic hubs across Malaysia and trusted global partners.</small></div></li><li><span>✓</span><div><b>Flexible solutions</b><small>Logistics plans tailored to the way your operation works.</small></div></li></ul></div>
+      <div class="about-art about-photo" role="img" aria-label="Automotive logistics and production facility"><div class="about-photo-top"><span>FURI GLOBAL</span><small>INTEGRATED SUPPLY CHAIN</small></div><div class="about-photo-caption"><i></i><p>Connecting production, logistics and technology within one automotive ecosystem.</p></div><div class="badge"><strong>2020</strong><small>Company<br>Established</small></div></div>
+      <div class="about-copy"><span class="kicker">ABOUT FURI</span><h2>Built for automotive.<br><em>Connected globally.</em></h2><p>Furi Supply Chain Technology Co., Ltd. was established in September 2020. Its predecessor, Taizhou Furi Logistics Co., Ltd., began operations in February 2017. The company focuses on automotive logistics and aims to become an integrated supply-chain service provider with global influence.</p><ul><li><span>✓</span><div><b>Industry-backed foundation</b><small>Established through the cooperation of Hangzhou Fuju Logistics and Geely Group Investment.</small></div></li><li><span>✓</span><div><b>Integrated operations</b><small>Connecting transportation, warehousing, packaging and production support.</small></div></li><li><span>✓</span><div><b>Technology-enabled management</b><small>Digital systems support visibility, coordination and operational efficiency.</small></div></li></ul></div>
+    </section>
+
+    <section class="company-direction section" id="company">
+      <div class="direction-intro"><span class="kicker">OUR DIRECTION</span><h2>Integrated by design.<br><em>Global in ambition.</em></h2><p>FURI brings logistics resources, automotive expertise and digital capabilities into one connected service platform.</p></div>
+      <div class="direction-grid">
+        <article class="direction-card vision-card"><span class="direction-number">01</span><div class="direction-icon">◎</div><small>OUR VISION</small><h3>To build an integrated automotive supply-chain service provider with global influence.</h3><p>We connect resources across manufacturing, logistics and technology to create a stronger and more responsive automotive ecosystem.</p></article>
+        <article class="direction-card mission-card"><span class="direction-number">02</span><div class="direction-icon">↗</div><small>OUR APPROACH</small><h3>To integrate every critical flow—from components and packaging to transport and data.</h3><p>Our coordinated operating model helps manufacturers and suppliers improve visibility, efficiency and supply-chain performance.</p></article>
+      </div>
+      <div class="values-row"><span>Customer Focus</span><span>Operational Excellence</span><span>Integrity</span><span>Innovation</span><span>Sustainability</span></div>
+    </section>
+
+    <section class="management-section" id="management">
+      <div class="management-heading"><div><span class="kicker light">OUR LEADERSHIP</span><h2>Management<br><em>Team.</em></h2></div><p>Led by experience and united by a shared commitment to building resilient automotive supply chains.</p></div>
+      <div class="team-grid">
+        <article class="team-card"><div class="team-portrait"><span>MD</span></div><div class="team-info"><small>MANAGING DIRECTOR</small><h3>Name to be confirmed</h3><p>Corporate strategy, business growth and regional partnerships.</p></div><span class="team-index">01</span></article>
+        <article class="team-card"><div class="team-portrait"><span>COO</span></div><div class="team-info"><small>CHIEF OPERATING OFFICER</small><h3>Name to be confirmed</h3><p>Operational excellence, transportation and warehouse performance.</p></div><span class="team-index">02</span></article>
+        <article class="team-card"><div class="team-portrait"><span>SC</span></div><div class="team-info"><small>HEAD OF SUPPLY CHAIN</small><h3>Name to be confirmed</h3><p>Integrated planning, customer solutions and supply-chain innovation.</p></div><span class="team-index">03</span></article>
+        <article class="team-card"><div class="team-portrait"><span>FA</span></div><div class="team-info"><small>HEAD OF FINANCE & ADMIN</small><h3>Name to be confirmed</h3><p>Financial stewardship, governance and organisational support.</p></div><span class="team-index">04</span></article>
+      </div>
+      <p class="management-note">Leadership names and photographs are placeholders pending official company information.</p>
     </section>
 
     <section class="business-section section" id="business">
-      <div class="section-heading"><div><span class="kicker">CORE BUSINESS</span><h2>Connected solutions for<br><em>automotive supply chains.</em></h2></div><p>FURI brings materials, components and finished products together within one efficient and transparent operational network.</p></div>
+      <div class="section-heading"><div><span class="kicker">CORE BUSINESS</span><h2>Eight capabilities.<br><em>One integrated network.</em></h2></div><p>FURI combines logistics execution, automotive support services, trade and digital management across the supply chain.</p></div>
       <div class="business-grid">
         <article><span>01</span><div class="biz-symbol">↗</div><h3>Production Logistics</h3><p>Materials and components delivered directly to production lines according to operational schedules.</p></article>
         <article><span>02</span><div class="biz-symbol">▦</div><h3>Packaging Logistics</h3><p>Industrial packaging, returnable packaging and cargo-space optimisation solutions.</p></article>
         <article><span>03</span><div class="biz-symbol">▰</div><h3>Transportation</h3><p>Scheduled land transportation with shipment visibility and performance control.</p></article>
         <article><span>04</span><div class="biz-symbol">◎</div><h3>International Logistics</h3><p>Freight forwarding, customs support and cross-border shipment coordination.</p></article>
-        <article><span>05</span><div class="biz-symbol">⌂</div><h3>Warehousing</h3><p>Warehouse, inventory, sequencing and fulfilment management for scalable operations.</p></article>
-        <article><span>06</span><div class="biz-symbol">⚙</div><h3>Automotive Services</h3><p>Assembly, sub-assembly, inspection, testing and distribution of automotive components.</p></article>
+        <article><span>05</span><div class="biz-symbol">◇</div><h3>International Trade</h3><p>Import and export support connecting products, suppliers and automotive markets.</p></article>
+        <article><span>06</span><div class="biz-symbol">⚙</div><h3>Value-Added Services</h3><p>Sequencing, sub-assembly and specialised production support for automotive components.</p></article>
+        <article><span>07</span><div class="biz-symbol">∞</div><h3>Supply Chain Integration</h3><p>Coordinated resources, processes and partners managed as one connected operating network.</p></article>
+        <article><span>08</span><div class="biz-symbol">▤</div><h3>Digital Management Services</h3><p>Data-enabled logistics management supporting visibility, planning and operational control.</p></article>
       </div>
     </section>
 
     <section class="events-section" id="events">
-      <div class="events-intro"><span class="kicker light">COMPANY EVENTS</span><h2>Inside FURI.<br><em>Moving forward, together.</em></h2><p>Company activities, community programmes and the latest updates from the FURI Global team.</p><a href="#events-grid">View all events →</a></div>
+      <div class="events-intro"><span class="kicker light">COMPANY EVENTS</span><h2>Inside FURI.<br><em>Moving forward, together.</em></h2><p>Company activities, community programmes and the latest updates from the FURI Global team.</p><div class="event-slider-tools"><span>10 EVENTS · SWIPE TO EXPLORE</span><div class="event-slider-controls"><button class="event-prev" type="button" aria-label="Previous events">←</button><button class="event-next" type="button" aria-label="Next events">→</button></div></div></div>
       <div class="event-grid" id="events-grid">
-        <article class="event-card main-event"><div class="event-photo event-one"><span>FEATURED</span></div><div><small>12 JUN 2026 · SHAH ALAM</small><h3>FURI Supply Chain Innovation Day</h3><p>Sharing ideas and technologies to build smarter automotive logistics operations.</p><a href="#">Read more →</a></div></article>
-        <article class="event-card"><div class="event-photo event-two"></div><div><small>20 APR 2026 · SELANGOR</small><h3>Community & Sustainability Day</h3><p>A volunteer initiative developed together with the local community.</p><a href="#">Read more →</a></div></article>
-        <article class="event-card"><div class="event-photo event-three"></div><div><small>08 FEB 2026 · MALAYSIA</small><h3>Annual Team Gathering</h3><p>Celebrating our achievements and the people behind every journey.</p><a href="#">Read more →</a></div></article>
+        <article class="event-card main-event"><div class="event-photo event-one"><span>FEATURED</span></div><div><small>12 JUN 2026 · SHAH ALAM</small><h3>FURI Supply Chain Innovation Day</h3><p>Sharing ideas and technologies to build smarter automotive logistics operations.</p><button class="event-more" type="button" data-event="innovation">Read more →</button></div></article>
+        <article class="event-card"><div class="event-photo event-two"></div><div><small>20 APR 2026 · SELANGOR</small><h3>Community & Sustainability Day</h3><p>A volunteer initiative developed together with the local community.</p><button class="event-more" type="button" data-event="community">Read more →</button></div></article>
+        <article class="event-card"><div class="event-photo event-three"></div><div><small>08 FEB 2026 · MALAYSIA</small><h3>Annual Team Gathering</h3><p>Celebrating our achievements and the people behind every journey.</p><button class="event-more" type="button" data-event="gathering">Read more →</button></div></article>
+        <article class="event-card"><div class="event-photo event-four"></div><div><small>18 NOV 2025 · SHAH ALAM</small><h3>Warehouse Safety Week</h3><p>Building stronger safety habits across every shift and operation.</p><button class="event-more" type="button" data-event="safety">Read more →</button></div></article>
+        <article class="event-card"><div class="event-photo event-five"></div><div><small>04 OCT 2025 · SELANGOR</small><h3>Automotive Partner Forum</h3><p>Connecting partners to strengthen the automotive supply-chain ecosystem.</p><button class="event-more" type="button" data-event="partner">Read more →</button></div></article>
+        <article class="event-card"><div class="event-photo event-six"></div><div><small>16 AUG 2025 · PORT KLANG</small><h3>Operations Excellence Workshop</h3><p>Practical ideas for faster, leaner and more consistent operations.</p><button class="event-more" type="button" data-event="operations">Read more →</button></div></article>
+        <article class="event-card"><div class="event-photo event-seven"></div><div><small>21 JUN 2025 · MALAYSIA</small><h3>Green Logistics Initiative</h3><p>Exploring responsible practices for a more sustainable supply chain.</p><button class="event-more" type="button" data-event="green">Read more →</button></div></article>
+        <article class="event-card"><div class="event-photo event-eight"></div><div><small>10 MAY 2025 · SELANGOR</small><h3>Leadership Development Day</h3><p>Developing confident leaders for tomorrow's logistics challenges.</p><button class="event-more" type="button" data-event="leadership">Read more →</button></div></article>
+        <article class="event-card"><div class="event-photo event-nine"></div><div><small>22 MAR 2025 · SHAH ALAM</small><h3>Quality & Kaizen Showcase</h3><p>Celebrating continuous improvement ideas created by our teams.</p><button class="event-more" type="button" data-event="quality">Read more →</button></div></article>
+        <article class="event-card"><div class="event-photo event-ten"></div><div><small>18 JAN 2025 · MALAYSIA</small><h3>New Year Business Kick-Off</h3><p>Aligning our teams, priorities and ambition for the year ahead.</p><button class="event-more" type="button" data-event="kickoff">Read more →</button></div></article>
       </div>
+      <div class="event-slider-progress" aria-hidden="true"><i></i></div>
       <p class="demo-note">* The event content above is for design demonstration and should be replaced with confirmed information.</p>
     </section>
 
@@ -105,19 +142,28 @@
 
     <section class="careers-section" id="careers">
       <div class="career-copy"><span class="kicker light">BUILD YOUR CAREER</span><h2>Move the future<br><em>with FURI.</em></h2><p>We are always looking for people who are passionate about logistics, technology and the automotive industry.</p><div class="career-points"><span>✓ Growth opportunities</span><span>✓ Collaborative culture</span><span>✓ Industry exposure</span></div></div>
-      <form class="cv-form" id="cv-form"><div class="form-title"><span>SUBMIT YOUR CV</span><b>Join our talent network</b></div><div class="form-row"><label>Full name<input name="name" required placeholder="Your name"></label><label>Email<input name="email" type="email" required placeholder="name@email.com"></label></div><label>Area of interest<select name="department"><option>Logistics Operations</option><option>Warehouse & Inventory</option><option>Automotive Services</option><option>Finance & Administration</option><option>Technology</option></select></label><label class="upload-box">CV / Resume<input name="cv" type="file" accept=".pdf,.doc,.docx" required><span><b>＋ Choose file</b><small>PDF, DOC or DOCX · Maximum 5MB</small></span></label><button type="submit">Submit Application →</button><small id="cv-result">By submitting your CV, you agree to be contacted about career opportunities.</small></form>
+      <form class="cv-form" id="cv-form" action="https://usebasin.com/f/17e001e5c155" method="POST" enctype="multipart/form-data" accept-charset="UTF-8"><input type="hidden" name="_subject" value="New career application from FURI Global website"><div class="form-title"><span>SUBMIT YOUR CV</span><b>Join our talent network</b></div><div class="form-row"><label>Full name<input name="name" required autocomplete="name" placeholder="Your name"></label><label>Email<input name="email" type="email" required autocomplete="email" placeholder="name@email.com"></label></div><label>Area of interest<select name="department"><option>Logistics Operations</option><option>Warehouse & Inventory</option><option>Automotive Services</option><option>Finance & Administration</option><option>Technology</option></select></label><label class="upload-box">CV / Resume<input name="cv" id="cv-file" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required><span><b id="cv-file-name">＋ Choose file</b><small id="cv-file-meta">PDF, DOC or DOCX · Maximum 5MB</small></span></label><button type="submit">Submit Application →</button><small id="cv-result" role="status" aria-live="polite">By submitting your CV, you agree to be contacted about career opportunities.</small></form>
     </section>
 
-    <section class="quote" id="quote">
-      <div><span class="kicker light">LET'S GET MOVING</span><h2>Have cargo to move?</h2><p>Tell us what you need. Our team will contact you within one business day.</p></div>
-      <form id="quote-form"><input aria-label="Name" placeholder="Your name" required><input type="email" aria-label="Email" placeholder="Company email" required><select aria-label="Service type"><option>Select a service</option><option>Land Transportation</option><option>Air Freight</option><option>Ocean Freight</option><option>Warehousing</option></select><button type="submit">Request a Quote →</button><small id="quote-result"></small></form>
-    </section>
   </main>
 
   <footer id="contact"><a class="brand brand-logo footer-brand" href="#home"><img src="assets/brand/furi-global-logo.png" alt="FURI Global"></a><p>Selangor, Malaysia<br>Integrated Supply Chain Solutions</p><p><b>FURI Global Sdn. Bhd.</b><br>hello@furiglobal.com.my</p><span>© 2026 FURI Global Sdn. Bhd. Demo website.</span></footer>
+  <dialog class="event-modal" id="event-modal" aria-labelledby="event-modal-title">
+    <button class="modal-close" type="button" aria-label="Close event details">×</button>
+    <div class="modal-image" id="event-modal-image"><span class="modal-event-tag" id="event-modal-tag"></span><span class="modal-image-caption">FURI GLOBAL · COMPANY EVENTS</span></div>
+    <div class="modal-content"><div class="modal-title-row"><div><small id="event-modal-meta"></small><h2 id="event-modal-title"></h2></div><span class="modal-year">2026</span></div><p id="event-modal-intro"></p><div class="modal-details" id="event-modal-details"></div><div class="modal-footer"><p class="modal-disclaimer">Event information shown is demonstration content pending official confirmation.</p><span>Explore · Connect · Move Forward</span></div></div>
+  </dialog>
+  <dialog class="cv-success-modal" id="cv-success-modal" aria-labelledby="cv-success-title">
+    <button class="cv-success-close" type="button" aria-label="Close confirmation">×</button>
+    <div class="cv-success-icon" aria-hidden="true">✓</div>
+    <small>APPLICATION RECEIVED</small>
+    <h2 id="cv-success-title">Thank you for<br>joining our journey.</h2>
+    <p>Your application and CV have been submitted successfully. Our team will contact you if your experience matches an available opportunity.</p>
+    <button class="cv-success-done" type="button">Done</button>
+  </dialog>
   <aside class="social-rail" aria-label="Social media"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a></aside>
   <a class="whatsapp" href="https://wa.me/60331688800" target="_blank" rel="noreferrer" aria-label="Contact us on WhatsApp"><span>◔</span><small>Chat on WhatsApp</small></a>
   <button class="back-top" aria-label="Back to top">↑</button>
-  <script src="logistics.js"></script>
+  <script src="logistics.js?v=7"></script>
 </body>
 </html>
