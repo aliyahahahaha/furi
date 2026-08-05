@@ -2,7 +2,7 @@
 .direction-grid{grid-template-columns:repeat(3,1fr)}
 .direction-card h3{font-size:21px}
 .purpose-card ul{margin:15px 0 0;padding:0;list-style:none}
-.purpose-card li{position:relative;padding-left:20px;margin:0 0 16px;color:#566572;font-size:13px;line-height:1.75}
+.purpose-card li{position:relative;padding-left:22px;margin:0 0 18px;color:#102235;font-size:21px;font-weight:700;line-height:1.35;letter-spacing:-.4px}
 .purpose-card li:before{content:"•";position:absolute;left:0;color:var(--orange);font-weight:800}
 .purpose-card .direction-icon{background:#fff0e9}
 .direction-card{overflow:hidden;transition:transform .35s ease,box-shadow .35s ease,background-color .35s ease}
@@ -13,5 +13,5 @@
 .direction-card:hover .direction-icon{transform:rotate(8deg) scale(1.1)}
 .vision-card:hover,.purpose-card:hover{background:#fffaf7}
 .mission-card:hover{background:#0d2c49}
-@media(max-width:1000px){.direction-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.direction-card{min-height:390px;padding:30px}.direction-card h3{font-size:18px}.purpose-card li{font-size:11px}}
+@media(max-width:1000px){.direction-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.direction-card{min-height:390px;padding:30px}.direction-card h3,.purpose-card li{font-size:18px}}
 @media(max-width:700px){.direction-grid{grid-template-columns:1fr}.direction-card+.direction-card{border-left:1px solid #d7dcde;border-top:0}.direction-card{min-height:320px}}
