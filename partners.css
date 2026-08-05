@@ -33,6 +33,19 @@
   white-space: nowrap;
 }
 
+.partner-label > a {
+  margin-top: 9px;
+  color: #65717c;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.partner-label > a span { color: #ff5b1a; }
+.partner-label > a:hover { color: #ff5b1a; }
+
 .partner-strip .partner-track {
   gap: 0;
   padding: 0;
@@ -58,6 +71,20 @@
   transition: filter .3s, opacity .3s, transform .3s;
 }
 
+.partner-group img[src*="infinity-logistics"],
+.partner-group img[src*="kontena-nasional"],
+.partner-group img[src*="chery"] {
+  padding: 40px 42px;
+}
+
+.partner-group img[src*="tasco"] {
+  padding: 36px 31px;
+}
+
+.partner-group img[src*="pos-logistics"] {
+  padding: 47px 43px;
+}
+
 .partner-group img:hover {
   filter: grayscale(0);
   opacity: 1;
@@ -74,6 +101,11 @@
   .partner-label strong { font-size: 11px; }
   .partner-strip .partner-track { margin-left: 110px; }
   .partner-group img { width: 135px; height: 110px; padding: 24px 20px; }
+  .partner-group img[src*="infinity-logistics"],
+  .partner-group img[src*="kontena-nasional"],
+  .partner-group img[src*="chery"] { padding: 32px 34px; }
+  .partner-group img[src*="tasco"] { padding: 29px 25px; }
+  .partner-group img[src*="pos-logistics"] { padding: 37px 34px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

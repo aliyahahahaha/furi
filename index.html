@@ -25,6 +25,9 @@
     .events-intro > h2,
     .events-intro > p { max-width: 650px; }
     .event-slider-tools { width: 100%; }
+    .hero h1 { font-size: clamp(48px, 5.2vw, 76px); }
+    @media (max-width: 900px) { .hero h1 { font-size: 48px; } }
+    @media (max-width: 560px) { .hero h1 { font-size: 38px; } }
   </style>
 </head>
 <body>
@@ -33,7 +36,7 @@
   <header class="site-header">
     <a class="brand brand-logo" href="#home" aria-label="FURI Global"><img src="assets/brand/furi-global-logo.png" alt="FURI Global"></a>
     <nav id="main-nav" aria-label="Main navigation">
-      <a href="#home">Home</a><a href="#company">Company</a><a href="#business">Business</a><a href="#events">Events</a><a href="#awards">Awards</a><a href="#careers">Careers</a>
+      <a href="#home">Home</a><a href="#company">Company</a><a href="#business">Business</a><a href="partners.html">Partners</a><a href="#events">Events</a><a href="#careers">Careers</a><a href="contact.html">Contact</a>
     </nav>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
   </header>
@@ -42,15 +45,15 @@
     <section class="hero" id="home">
       <div class="hero-grid"></div>
       <div class="hero-content">
-        <div class="eyebrow"><span></span> INTEGRATED AUTOMOTIVE SUPPLY CHAIN</div>
-        <h1>Moving <em>Industry.</em><br>Connecting Supply.<br>Creating <em>Value.</em></h1>
-        <p>Integrated logistics, packaging, transportation and digital services built around the automotive industry.</p>
+        <div class="eyebrow"><span></span> INTEGRATED LOGISTICS &amp; SUPPLY CHAIN SOLUTIONS</div>
+        <h1>Moving <em>Industry.</em><br>Connecting Supply Chains.<br>Delivering <em>Excellence.</em></h1>
+        <p>One trusted partner for warehousing, transportation, freight forwarding, inventory management, distribution and end-to-end supply chain solutions.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Contact Us <span>→</span></a>
-          <a class="play-link" href="#about"><span class="play">▶</span><b>Discover FURI</b></a>
+          <a class="btn btn-primary" href="contact.html">Contact Us <span>→</span></a>
+          <a class="play-link" href="#services"><span class="play">▶</span><b>Our Services</b></a>
         </div>
       </div>
-      <div class="hero-visual" role="img" aria-label="Container trucks at a logistics hub">
+      <div class="hero-visual" role="img" aria-label="Automotive logistics and production facility">
         <div class="route route-one"></div><div class="route route-two"></div>
       </div>
       <div class="stats">
@@ -61,7 +64,7 @@
       </div>
     </section>
 
-    <section class="trust-strip partner-strip" aria-label="Partner logo showcase"><div class="partner-label"><small>OUR NETWORK</small><strong>Partner Showcase</strong></div><div class="trust-track partner-track"><div class="partner-group"><img src="assets/partners/partner-01.png" alt="FURI official partner 1"><img src="assets/partners/partner-02.png" alt="FURI official partner 2"><img src="assets/partners/partner-03.png" alt="FURI official partner 3"><img src="assets/partners/partner-04.png" alt="FURI official partner 4"><img src="assets/partners/partner-05.png" alt="FURI official partner 5"><img src="assets/partners/partner-06.png" alt="FURI official partner 6"><img src="assets/partners/partner-07.png" alt="FURI official partner 7"><img src="assets/partners/partner-08.png" alt="FURI official partner 8"><img src="assets/partners/partner-09.png" alt="FURI official partner 9"><img src="assets/partners/partner-10.png" alt="FURI official partner 10"><img src="assets/partners/partner-11.png" alt="FURI official partner 11"><img src="assets/partners/partner-12.png" alt="FURI official partner 12"><img src="assets/partners/proton-logo.png" alt="Proton"></div><div class="partner-group" aria-hidden="true"><img src="assets/partners/partner-01.png" alt=""><img src="assets/partners/partner-02.png" alt=""><img src="assets/partners/partner-03.png" alt=""><img src="assets/partners/partner-04.png" alt=""><img src="assets/partners/partner-05.png" alt=""><img src="assets/partners/partner-06.png" alt=""><img src="assets/partners/partner-07.png" alt=""><img src="assets/partners/partner-08.png" alt=""><img src="assets/partners/partner-09.png" alt=""><img src="assets/partners/partner-10.png" alt=""><img src="assets/partners/partner-11.png" alt=""><img src="assets/partners/partner-12.png" alt=""><img src="assets/partners/proton-logo.png" alt=""></div></div></section>
+    <section class="trust-strip partner-strip" aria-label="FURI Global partners and customers"><div class="partner-label"><small>OUR NETWORK</small><strong>Partners &amp; Customers</strong><a href="partners.html">View all partners <span>→</span></a></div><div class="trust-track partner-track"><div class="partner-group"><img src="assets/partners/infinity-logistics.png" alt="Infinity Logistics"><img src="assets/partners/mtt-shipping.png" alt="MTT Shipping & Logistics"><img src="assets/partners/kontena-nasional.png" alt="Kontena Nasional"><img src="assets/partners/tasco.png" alt="TASCO"><img src="assets/partners/pos-logistics.png" alt="POS Logistics"><img src="assets/partners/proton-logo.png" alt="Proton"><img src="assets/partners/chery.png" alt="Chery"><img src="assets/partners/feytech.png" alt="Feytech"></div><div class="partner-group" aria-hidden="true"><img src="assets/partners/infinity-logistics.png" alt=""><img src="assets/partners/mtt-shipping.png" alt=""><img src="assets/partners/kontena-nasional.png" alt=""><img src="assets/partners/tasco.png" alt=""><img src="assets/partners/pos-logistics.png" alt=""><img src="assets/partners/proton-logo.png" alt=""><img src="assets/partners/chery.png" alt=""><img src="assets/partners/feytech.png" alt=""></div></div></section>
 
     <section class="services section" id="services">
       <div class="section-heading"><div><span class="kicker">WHAT WE DO</span><h2>One network for the<br><em>automotive industry.</em></h2></div><p>From inbound materials to production lines and international distribution, FURI connects every stage through coordinated logistics operations.</p></div>
@@ -81,8 +84,9 @@
     <section class="company-direction section" id="company">
       <div class="direction-intro"><span class="kicker">OUR DIRECTION</span><h2>Integrated by design.<br><em>Global in ambition.</em></h2><p>FURI brings logistics resources, automotive expertise and digital capabilities into one connected service platform.</p></div>
       <div class="direction-grid">
-        <article class="direction-card vision-card"><span class="direction-number">01</span><div class="direction-icon">◎</div><small>OUR VISION</small><h3>To build an integrated automotive supply-chain service provider with global influence.</h3><p>We connect resources across manufacturing, logistics and technology to create a stronger and more responsive automotive ecosystem.</p></article>
-        <article class="direction-card mission-card"><span class="direction-number">02</span><div class="direction-icon">↗</div><small>OUR APPROACH</small><h3>To integrate every critical flow—from components and packaging to transport and data.</h3><p>Our coordinated operating model helps manufacturers and suppliers improve visibility, efficiency and supply-chain performance.</p></article>
+        <article class="direction-card vision-card"><span class="direction-number">01</span><div class="direction-icon">◎</div><small>OUR VISION</small><h3>To be a leader in automotive logistics solution provider.</h3></article>
+        <article class="direction-card mission-card"><span class="direction-number">02</span><div class="direction-icon">↗</div><small>OUR MISSION</small><h3>To offer optimized logistics services that are tailored to meet the needs of our clients and become the most reliable supply-chain provider that creates customer value.</h3></article>
+        <article class="direction-card purpose-card"><span class="direction-number">03</span><div class="direction-icon">◇</div><small>OUR PURPOSE</small><ul><li>Optimize Proton Group logistics with expert, efficient and cost-effective services.</li><li>Be the trusted logistics partner, allowing Proton to focus on core competencies without in-house logistics investment.</li></ul></article>
       </div>
       <div class="values-row"><span>Customer Focus</span><span>Operational Excellence</span><span>Integrity</span><span>Innovation</span><span>Sustainability</span></div>
     </section>
@@ -161,7 +165,7 @@
     <p>Your application and CV have been submitted successfully. Our team will contact you if your experience matches an available opportunity.</p>
     <button class="cv-success-done" type="button">Done</button>
   </dialog>
-  <aside class="social-rail" aria-label="Social media"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a></aside>
+  <aside class="social-rail" aria-label="Social media"><a href="https://www.facebook.com/profile.php?id=61592820811470" target="_blank" rel="noopener noreferrer" aria-label="FURI Global on Facebook">f</a><a href="#" aria-label="LinkedIn">in</a></aside>
   <a class="whatsapp" href="https://wa.me/60331688800" target="_blank" rel="noreferrer" aria-label="Contact us on WhatsApp"><span>◔</span><small>Chat on WhatsApp</small></a>
   <button class="back-top" aria-label="Back to top">↑</button>
   <script src="logistics.js?v=7"></script>
