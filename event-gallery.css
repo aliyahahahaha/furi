@@ -1,0 +1,74 @@
+.event-one {
+  background-image: url('assets/events/kpi-review/photo-01.png');
+  background-position: center 22%;
+}
+
+.event-one::after {
+  background: linear-gradient(0deg, #071b2f66 0%, #071b2f12 48%, transparent 75%);
+}
+
+.event-two {
+  background-image: url('assets/events/cny-celebration/photo-01.png');
+  background-position: center 28%;
+}
+
+.event-two::after {
+  background: linear-gradient(0deg, #071b2f5c 0%, #071b2f0d 50%, transparent 76%);
+}
+
+.event-three {
+  background-image: url('assets/events/annual-dinner-2026/cover.png');
+  background-position: center 38%;
+}
+
+.event-three::after {
+  background: linear-gradient(0deg, #071b2f5c 0%, #071b2f0d 48%, transparent 74%);
+}
+
+.events-section .event-four {
+  background-image: url('assets/events/raya-open-house-2026/photo-02.jpg');
+  background-position: center 42%;
+}
+
+.events-section .event-four::after {
+  background: linear-gradient(0deg, #071b2f5c 0%, #071b2f0d 50%, transparent 76%);
+}
+
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 26px;
+}
+
+.event-gallery[hidden] { display: none; }
+
+.event-gallery button {
+  height: 82px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 8px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  background: #dfe5e8;
+  cursor: pointer;
+}
+
+.event-gallery button:hover,
+.event-gallery button.active { outline-color: var(--orange); }
+
+.event-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .25s ease;
+}
+
+.event-gallery button:hover img { transform: scale(1.06); }
+
+@media (max-width: 560px) {
+  .event-gallery { grid-template-columns: repeat(2, 1fr); }
+  .event-gallery button { height: 92px; }
+}

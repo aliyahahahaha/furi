@@ -113,27 +113,42 @@ cvForm.addEventListener('submit', async e => {
 
 const eventDetails = {
   innovation: {
-    title: 'FURI Supply Chain Innovation Day', meta: '12 JUNE 2026 · SHAH ALAM', tag: 'FEATURED EVENT · 01',
-    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80',
-    intro: 'A focused industry session exploring how technology, collaboration and smarter processes can strengthen automotive logistics operations.',
-    details: '<h3>Event highlights</h3><ul><li>Digital transformation in automotive supply chains</li><li>Operational excellence and process improvement</li><li>Industry networking and knowledge sharing</li></ul>'
+    title: 'FGSB CY25 Q2 KPI Review', meta: '2025 · MALAYSIA', tag: 'CORPORATE EVENT · 01',
+    image: 'assets/events/kpi-review/photo-01.png',
+    intro: 'FGSB teams came together to review second-quarter performance, exchange departmental updates and align priorities for the next phase of the year.',
+    details: '<h3>Event highlights</h3><ul><li>Quarterly KPI and business performance review</li><li>Department presentations and progress updates</li><li>Cross-functional discussion and team alignment</li></ul>',
+    gallery: ['photo-01.png','photo-02.png','photo-03.png','photo-04.png','photo-05.png','photo-06.png','photo-07.png','photo-08.png','photo-09.png'].map(file => `assets/events/kpi-review/${file}`)
   },
   community: {
-    title: 'Community & Sustainability Day', meta: '20 APRIL 2026 · SELANGOR', tag: 'COMMUNITY EVENT · 02',
-    image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80',
-    intro: 'A day dedicated to giving back, strengthening local connections and encouraging practical sustainability across our workplace and community.',
-    details: '<h3>Programme focus</h3><ul><li>Employee volunteer activities</li><li>Environmental awareness initiatives</li><li>Community partnership programmes</li></ul>'
+    title: 'Chinese New Year Celebration', meta: '2025 · SELANGOR', tag: 'TEAM CELEBRATION · 02',
+    image: 'assets/events/cny-celebration/photo-01.png',
+    intro: 'The FURI team came together in festive colours to celebrate Chinese New Year, enjoy a shared meal and strengthen connections across departments.',
+    details: '<h3>Celebration highlights</h3><ul><li>Team gathering in the spirit of togetherness</li><li>Festive lunch and informal networking</li><li>Celebrating the people behind FURI operations</li></ul>',
+    gallery: ['photo-01.png','photo-02.png','photo-03.png','photo-04.png','photo-05.png','photo-06.png'].map(file => `assets/events/cny-celebration/${file}`)
   },
   gathering: {
-    title: 'Annual Team Gathering', meta: '08 FEBRUARY 2026 · MALAYSIA', tag: 'TEAM EVENT · 03',
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1000&q=80',
-    intro: 'An opportunity to recognise shared achievements, strengthen collaboration and celebrate the people who keep every FURI operation moving.',
-    details: '<h3>Gathering highlights</h3><ul><li>Business and team updates</li><li>Employee recognition</li><li>Team-building and networking</li></ul>'
+    title: 'FURI Global 1st Annual Dinner', meta: '31 JANUARY 2026 · MALAYSIA', tag: 'ANNUAL DINNER · 03',
+    image: 'assets/events/annual-dinner-2026/cover.png',
+    intro: 'FURI Global marked its first annual dinner with a memorable evening dedicated to the people, teamwork and achievements behind the company’s journey.',
+    details: '<h3>Evening highlights</h3><ul><li>Celebrating the FURI Global team</li><li>Recognising shared achievements and milestones</li><li>Strengthening connections across the organisation</li></ul>',
+    gallery: [
+      'assets/events/annual-dinner-2026/cover.png',
+      'assets/events/annual-dinner-2026/photo-02.jpg',
+      'assets/events/annual-dinner-2026/photo-03.jpg',
+      'assets/events/annual-dinner-2026/photo-04.jpg',
+      'assets/events/annual-dinner-2026/photo-05.jpg',
+      'assets/events/annual-dinner-2026/photo-06.jpg',
+      'assets/events/annual-dinner-2026/photo-07.jpg',
+      'assets/events/annual-dinner-2026/photo-08.jpg',
+      'assets/events/annual-dinner-2026/photo-09.jpg',
+      'assets/events/annual-dinner-2026/photo-10.jpg'
+    ]
   },
   safety: {
-    title: 'Warehouse Safety Week', meta: '18 NOVEMBER 2025 · SHAH ALAM', tag: 'SAFETY EVENT · 04', image: 'https://images.unsplash.com/photo-1586528116493-da8b9346ad93?auto=format&fit=crop&w=1000&q=80',
-    intro: 'A focused programme reinforcing safe behaviour, shared accountability and operational awareness across our warehouse teams.',
-    details: '<h3>Programme highlights</h3><ul><li>Safe material-handling practices</li><li>Emergency response awareness</li><li>Team safety challenges</li></ul>'
+    title: 'FGSB Hari Raya Open House', meta: '13 APRIL 2026 · MALAYSIA', tag: 'FESTIVE EVENT · 04', image: 'assets/events/raya-open-house-2026/photo-02.jpg',
+    intro: 'FGSB welcomed colleagues, families and friends for a warm Hari Raya gathering celebrating togetherness, appreciation and the spirit of Aidilfitri.',
+    details: '<h3>Open house highlights</h3><ul><li>Hari Raya gathering with colleagues and families</li><li>Festive photo moments at the Eid Mubarak backdrop</li><li>Strengthening relationships across the FURI community</li></ul>',
+    gallery: ['photo-02.jpg','photo-01.jpg','photo-03.jpg','photo-04.jpg','photo-05.jpg','photo-07.jpg','photo-08.jpg','photo-09.jpg'].map(file => `assets/events/raya-open-house-2026/${file}`)
   },
   partner: {
     title: 'Automotive Partner Forum', meta: '04 OCTOBER 2025 · SELANGOR', tag: 'PARTNER EVENT · 05', image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80',
@@ -176,6 +191,13 @@ document.querySelectorAll('.event-more').forEach(button => button.addEventListen
   document.querySelector('#event-modal-title').textContent = event.title;
   document.querySelector('#event-modal-intro').textContent = event.intro;
   document.querySelector('#event-modal-details').innerHTML = event.details;
+  const gallery = document.querySelector('#event-modal-gallery');
+  gallery.innerHTML = event.gallery ? event.gallery.map((image, index) => `<button type="button" data-gallery-image="${image}" aria-label="View event photo ${index + 1}"><img src="${image}" alt="${event.title} photo ${index + 1}" loading="lazy"></button>`).join('') : '';
+  gallery.hidden = !event.gallery;
+  gallery.querySelectorAll('[data-gallery-image]').forEach(item => item.addEventListener('click', () => {
+    document.querySelector('#event-modal-image').style.backgroundImage = `url('${item.dataset.galleryImage}')`;
+    gallery.querySelectorAll('button').forEach(galleryButton => galleryButton.classList.toggle('active', galleryButton === item));
+  }));
   stopEventAutoplay();
   eventModal.showModal();
   modalClose.focus();

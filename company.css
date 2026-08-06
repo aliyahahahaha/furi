@@ -15,3 +15,4 @@
 .mission-card:hover{background:#0d2c49}
 @media(max-width:1000px){.direction-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.direction-card{min-height:390px;padding:30px}.direction-card h3,.purpose-card li{font-size:18px}}
 @media(max-width:700px){.direction-grid{grid-template-columns:1fr}.direction-card+.direction-card{border-left:1px solid #d7dcde;border-top:0}.direction-card{min-height:320px}}
+.team-portrait img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:center top;filter:saturate(.88);transition:transform .45s,filter .45s}.team-card:hover .team-portrait img{transform:scale(1.04);filter:saturate(1)}

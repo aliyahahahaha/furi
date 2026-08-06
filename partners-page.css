@@ -1,9 +1,15 @@
 .partners-page { background: #f5f2ec; }
+.partner-directory { display: flex; flex-direction: column; }
+.directory-intro { order: 0; }
+.customer-category { order: 1; margin-top: 0 !important; margin-bottom: 105px; }
+.partner-category:not(.customer-category) { order: 2; }
+.directory-note { order: 3; }
 .partners-page .site-header { position: absolute; }
 .partners-page nav a.active { color: #ff5b1a; }
 
 .partner-page-hero { min-height: 660px; padding: 190px 5.5vw 100px; position: relative; overflow: hidden; background: #071b2f; color: #fff; }
 .partner-hero-grid { position: absolute; inset: 0; background-image: linear-gradient(#ffffff08 1px, transparent 1px), linear-gradient(90deg, #ffffff08 1px, transparent 1px); background-size: 72px 72px; mask-image: linear-gradient(to right, #000 35%, transparent 85%); }
+.partner-hero-visual { position: absolute; inset: 0 0 0 auto; width: 54%; background: linear-gradient(90deg, #071b2f 0%, #071b2f99 24%, transparent 70%), linear-gradient(0deg, #071b2f 0%, transparent 44%), url('https://images.unsplash.com/photo-1774929107410-9cb5fb83fea6?auto=format&fit=crop&w=1600&q=85') center/cover no-repeat; filter: saturate(.72); opacity: .82; }
 .partner-page-hero:after { content: ""; width: 520px; height: 520px; position: absolute; right: 8vw; top: 95px; border: 1px solid #ffffff1d; border-radius: 50%; box-shadow: 0 0 0 95px #ffffff08, 0 0 0 190px #ffffff05; }
 .partner-hero-copy { position: relative; z-index: 2; max-width: 790px; }
 .page-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 2.2px; }
@@ -66,6 +72,7 @@
   .partner-page-hero { min-height: 590px; padding: 155px 24px 80px; }
   .partner-page-hero h1 { font-size: 61px; letter-spacing: -4px; }
   .partner-page-hero:after { right: -300px; }
+  .partner-hero-visual { width: 72%; opacity: .58; }
   .partner-hero-aside { display: none; }
   .partner-directory { padding: 78px 24px 70px; }
   .directory-intro, .category-heading { grid-template-columns: 1fr; gap: 25px; }
@@ -79,6 +86,7 @@
 @media (max-width: 430px) {
   .partner-page-hero h1 { font-size: 48px; }
   .partner-page-hero p { font-size: 14px; }
+  .partner-hero-visual { width: 100%; opacity: .38; background-position: 62% center; }
   .directory-card { min-height: 155px; }
   .partner-company-name { font-size: 9px; }
   .name-card strong { font-size: 15px; }
